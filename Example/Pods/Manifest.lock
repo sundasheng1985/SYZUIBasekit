@@ -1,0 +1,16 @@
+PODS:
+  - SYZUIBasekit (0.1.0)
+
+DEPENDENCIES:
+  - SYZUIBasekit (from `../`)
+
+EXTERNAL SOURCES:
+  SYZUIBasekit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SYZUIBasekit: 8ccfc671d0e0498a99b5191e21f96a92d14a1205
+
+PODFILE CHECKSUM: 128014d2a6d0e0ff0667149ccc82c4aee29cb141
+
+COCOAPODS: 1.4.0

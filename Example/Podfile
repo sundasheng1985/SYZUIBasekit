@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SYZUIBasekit_Example' do
+  pod 'SYZUIBasekit', :path => '../'
+
+  target 'SYZUIBasekit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
