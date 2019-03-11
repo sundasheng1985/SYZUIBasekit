@@ -1,16 +1,17 @@
 //
-//  SNHFoundationShorthandMarcos.h
-//  SNHFoundation
+//  SYZFoundationShorthandMarcos.h
+//  SYZFoundation
 //
-//  Created by 陈建蕾 on 2018/8/17.
+//  Created by sundasheng1985 on 10/28/2018.
+//  Copyright (c) 2018 sundasheng1985. All rights reserved.
 //
 
-#ifndef SNHFoundationShorthandMarcos_h
-#define SNHFoundationShorthandMarcos_h
+#ifndef SYZFoundationShorthandMarcos_h
+#define SYZFoundationShorthandMarcos_h
 #import <Foundation/Foundation.h>
 
 /** 判断代理能不能执行 */
-static inline BOOL SNHIsRespondsToSelector(id<NSObject> delegate, SEL sel) {
+static inline BOOL SYZIsRespondsToSelector(id<NSObject> delegate, SEL sel) {
     return (delegate && [delegate respondsToSelector:sel]);
 }
 
@@ -20,4 +21,4 @@ static inline BOOL SYZIsConformsToProtocol(id object, Protocol *protocol) {
 }
 
 
-#endif /* SNHFoundationShorthandMarcos_h */
+#endif /* SYZFoundationShorthandMarcos_h */

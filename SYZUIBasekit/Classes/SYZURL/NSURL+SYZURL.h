@@ -9,7 +9,7 @@
 #import <SYZUIBasekit/NSObject+SYZObject.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@interface NSURL (SNHURL)
+@interface NSURL (SYZURL)
 
 /** path转url */
 + (NSURL *)syz_urlWithPath:(NSString *)path;

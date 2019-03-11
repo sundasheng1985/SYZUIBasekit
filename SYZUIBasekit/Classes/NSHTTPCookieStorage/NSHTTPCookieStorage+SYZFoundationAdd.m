@@ -2,7 +2,8 @@
 //  NSHTTPCookieStorage+SYZFoundationAdd.m
 //  Pods-SYZUIBasekit_Example
 //
-//  Created by LeeRay on 2018/12/1.
+//  Created by sundasheng1985 on 10/28/2018.
+//  Copyright (c) 2018 sundasheng1985. All rights reserved.
 //
 
 #import "NSHTTPCookieStorage+SYZFoundationAdd.h"

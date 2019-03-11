@@ -45,6 +45,16 @@ extern NSString * _Nonnull SYZAvoidCrashExceptionNotification;
 #pragma mark - 转换
 - (NSString *)syz_toString;
 - (NSNumber *)syz_toNumber;
+/** 转义字符 */
+- (id)syz_replacingPercentEscapes;
+
+#pragma mark - 系统判断
+
+/** iOS11*/
+- (BOOL)syz_iOS11Available;
+
+/** iOS10*/
+- (BOOL)syz_iOS10Available;
 
 @end
 

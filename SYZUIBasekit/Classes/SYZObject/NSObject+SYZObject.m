@@ -100,4 +100,29 @@ BOOL SYZIsNotEmpty(id obj) {
 - (NSNumber *)syz_toNumber {
     return @0;
 }
+
+/**
+ 转义字符
+ */
+- (id)syz_replacingPercentEscapes {
+    return self;
+}
+
+#pragma mark - 系统判断
+
+/** iOS11*/
+- (BOOL)syz_iOS11Available {
+    if(@available(iOS 11.0,*)) {
+        return YES;
+    }
+    return NO;
+}
+
+- (BOOL)syz_iOS10Available {
+    if (@available(iOS 10.0,*)) {
+        return YES;
+    }
+    return NO;
+}
+
 @end
