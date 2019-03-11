@@ -197,6 +197,24 @@ NSString * const SYZGeneralUUIDString(void) {
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
+/** 不区分大小写，比较两个字符串*/
+- (BOOL)syz_isEqualToIgnoreCaseString:(NSString*)anotherString{
+    return [self.lowercaseString isEqualToString:anotherString.lowercaseString];
+}
+
+/** 隐藏中间<=一半的字符串*/
+- (NSString*)syz_beSecret{
+    NSUInteger length = self.length;
+    if (self.length <= 3) return self;
+    int hiddenLength = floor(length / 2);
+    int headerShowLength = floor((length - hiddenLength) / 2);
+    NSMutableString* star = [[NSMutableString alloc] initWithCapacity:hiddenLength];
+    for (int i = 0; i < hiddenLength; i++) {
+        [star appendString:@"*"];
+    }
+    return [self stringByReplacingCharactersInRange:NSMakeRange(headerShowLength, hiddenLength) withString:star];
+}
+
 /*!
  *  删掉行首和行尾换行符"\n"
  *  如： "\na\nb\n" ==> "a\nb"

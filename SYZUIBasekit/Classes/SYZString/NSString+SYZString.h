@@ -96,6 +96,12 @@ extern BOOL SYZIsEqualToString(NSString * aStr , NSString * bStr);
 /** 删除头部和尾部多余的空白字符 */
 - (NSString *)syz_removeFreeWhiteSpace;
 
+/** 不区分大小写，比较两个字符串*/
+- (BOOL)syz_isEqualToIgnoreCaseString:(NSString*)anotherString;
+
+/** 隐藏手机号，只显示开头3位和最后3位*/
+- (NSString*)syz_beSecret;
+
 /*!
  *  删掉行首和行尾换行符"\n"
  *  如： "\na\nb\n" ==> "a\nb"

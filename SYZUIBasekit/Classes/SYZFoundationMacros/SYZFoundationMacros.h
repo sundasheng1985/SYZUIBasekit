@@ -1,8 +1,8 @@
 //
 //  SYZFoundationMacros.h
 //  Pods
-//
-//  Created by majian on 16/6/6.
+//  Created by sundasheng1985 on 10/28/2018.
+//  Copyright (c) 2018 sundasheng1985. All rights reserved.
 //
 //
 
