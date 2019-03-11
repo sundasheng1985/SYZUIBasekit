@@ -60,6 +60,12 @@ NSArray * SYZNoNilArray(id array)
     return [self arrayByAddingObject:obj];
 }
 
+/** 转成可变字典，如果本身是NSArray，则执行mutableCopy方法，
+ 如果是NSMutableArray，则直接返回*/
+- (NSMutableArray*)syz_toMutable {
+    return self.mutableCopy;
+}
+
 /*!
  *  删除最后一个元素
  */

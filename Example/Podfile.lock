@@ -1,5 +1,5 @@
 PODS:
-  - SYZUIBasekit (0.1.3)
+  - SYZUIBasekit (0.1.4)
 
 DEPENDENCIES:
   - SYZUIBasekit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SYZUIBasekit: 618241f0a976d595b81911b392c81da83312d8f4
+  SYZUIBasekit: fd25a5a1fa31f67809abcb1b61e05b622d85e6d0
 
 PODFILE CHECKSUM: 128014d2a6d0e0ff0667149ccc82c4aee29cb141
 

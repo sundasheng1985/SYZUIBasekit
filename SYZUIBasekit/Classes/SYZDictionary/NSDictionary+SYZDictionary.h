@@ -38,6 +38,10 @@ extern NSDictionary * const _Nonnull SYZNoNilDictionary(NSDictionary * dict);
  */
 - (NSString*)syz_toJsonString;
 
+/** 转成可变字典，如果本身是NSDictionary，则执行mutableCopy方法，
+ 如果是NSMutableDictionary，则直接返回*/
+- (NSMutableDictionary*)syz_toMutable;
+
 /** 转成json对象 */
 - (id)syz_toJsonObject;
 @end

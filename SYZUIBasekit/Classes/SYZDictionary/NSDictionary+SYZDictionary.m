@@ -139,6 +139,12 @@ NSDictionary * const SYZNoNilDictionary(NSDictionary * dict) {
     return selfRet;
 }
 
+/** 转成可变字典，如果本身是NSDictionary，则执行mutableCopy方法，
+ 如果是NSMutableDictionary，则直接返回*/
+- (NSMutableDictionary*)syz_toMutable {
+    return self.mutableCopy;
+}
+
 
 @end
 

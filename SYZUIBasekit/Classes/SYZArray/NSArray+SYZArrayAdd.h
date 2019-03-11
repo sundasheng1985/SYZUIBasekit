@@ -26,6 +26,10 @@ extern NSArray * _Nonnull SYZNoNilArray(id array);
 /** 删除指定索引的元素 */
 - (NSArray *)syz_removeObjectAtIndex:(NSInteger)index;
 
+/** 转成可变字典，如果本身是NSArray，则执行mutableCopy方法，
+ 如果是NSMutableArray，则直接返回*/
+- (NSMutableArray*)syz_toMutable;
+
 /** 获取第一个元素 */
 - (id)syz_firstObject;
 
