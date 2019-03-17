@@ -192,6 +192,9 @@ extern BOOL SYZIsEqualToString(NSString * aStr , NSString * bStr);
 - (NSString *)syz_toString;
 - (NSNumber *)syz_toNumber;
 
+- (BOOL)syz_startsWith:(NSString*)prefix;
+- (BOOL)syz_endsWith:(NSString*)suffix;
+
 /**
  从头搜索字符串
  @example "4&12345&234"

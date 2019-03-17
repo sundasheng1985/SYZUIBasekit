@@ -417,6 +417,15 @@ NSString * const SYZGeneralUUIDString(void) {
     return [self syz_toLongLongNumber];
 }
 
+- (BOOL)syz_startsWith:(NSString*)prefix {
+    return [self rangeOfString:prefix].location == 0;
+}
+
+- (BOOL)syz_endsWith:(NSString*)suffix {
+    NSRange range = [self rangeOfString:suffix options:NSBackwardsSearch];
+    return range.location + range.length == self.length;
+}
+
 - (NSNumber *)syz_toDoubleNumber {
     
     return @(self.doubleValue);
